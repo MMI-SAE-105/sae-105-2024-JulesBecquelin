@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="/assets/Icons/Logo-coupe.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/Icons/Logo-coupe.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vis'Sport</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo-link" href="/index.html">
+            <img
+                class="header__logo"
+                src="/assets/Icons/Logo-complet.svg"
+                alt="Logo complet"
+            />
+        </a>
+        <button
+            class="header__menu-btn menu-btn"
+            aria-label="menu"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+          <a class="logo-cliquable__header" href="/"><img src="/assets/Icons/Logo-complet.svg" alt="Logo complet"></a>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="Info-pratique.html">Info Pratique</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Nous Contacter</a></li>
+                <li class="menu__item"><a class="menu__link" href="nos-invites.html">Nos invités</a></li>
+                <li class="menu__item"><a class="menu__link" href="proggramations.html">Programmation</a></li>
+                <li class="menu__item"><a class="menu__link" href="a-propos.html">À Propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="billeterie.html">Billeterie</a></li>
+                <li class="menu__item"><a class="menu__link" href="Programme.html">Programme</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact__coordonée">
+        <section class="contact">
+            <h1 class="contact__title">Contactez-Nous</h1>
+            <p class="contact__text">
+                Pour toute question ou demande d'information, n'hésitez pas à nous contacter.
+            </p>
+            <ul class="contact__liste">
+                <li class="coordonnée__titre">
+                    <h2 >Coordonnées</h2>
+                </li>
+                    <li class="contact__liste-item">
+                        <h3>Addresse</h3>
+                        <p>Axone de Montbéliard,Rue du Château, 25200 Montbéliard, France</p>
+                    </li>
+                    <li class="contact__liste-item">
+                        <h3>Email :</h3>
+                        <p>contact@vissportfestival.com</p>
+                    </li>
+                    <li class="contact__liste-item">
+                        <h3>Email :</h3>
+                        <p>contact@vissportfestival.com</p>
+                    </li>
+                    <li class="contact__liste-item">
+                        <h3>Téléphone :</h3>
+                        <p>03 81 99 20 20</p>
+                </li>
+            </ul>
+        </div>
+<div class="contact__reseaux">
+    <h2 class="contact__reseaux-titre"></h2>
+    <p class="contact__reseaux-texte">Suivez-nous sur nos réseaux pour rester informé des dernières nouvelles et des événements du festival !</p>
+        <ul class="contact__reseaux-liste">
+            <li class="contact__liste-item">
+                <p><strong>Instagram :</strong> @VisSportFestival</p>
+            </li>
+            <li class="contact__liste-item">
+                <p><strong>Facebook  :</strong> Vis'Sport Festival</p>
+            </li>
+            <li class="contact__liste-item">
+                <p><strong>Twitter  :</strong> @VisSport2025</p>
+            </li>
+        </ul>
+    
+</div>
+<div class="contact__formulaire">
+    <ul class="contact__formulaire-liste">
+        <li class="contact__formulaire-liste-item">
+            <h2>Formulaire de Contact :</h2>
+            <p>Remplissez le formulaire ci-dessous, et notre équipe vous répondra dans les plus brefs délais.</p>
+        </li>
+    </ul>
+    <h2 class="contact__formulaire-titre">Formulaire de contact</h2>
+    <form class="contact__formulaire-form" action="contact.php" method="post">
+        <label for="nom" class="contact__formulaire-label">Nom :</label>
+        <input type="text" id="nom" name="Nom" class="contact__formulaire-input" required>
+        <label for="email" class="contact__formulaire-label">Email :</label>
+        <input type="email" id="email" name="email" class="contact__formulaire-input" required>
+        <label for="message" class="contact__formulaire-label">Message :</label>
+        <textarea id="message" name="message" class="contact__formulaire-textarea" required></textarea>
+        <button type="submit" class="contact__formulaire-btn">Envoyer</button>
+    </form>
+</div>
+    <div class="contact__fin-de-page">
+        <ul class="contact__liste-fin-de-page ">
+            <li>
+                <h2></h2>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+                

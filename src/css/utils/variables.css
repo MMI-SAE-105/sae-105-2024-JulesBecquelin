@@ -11,4 +11,20 @@
     --orange-vif: #f03417;
     --marron-foncé: #632c31;
     --orange-clair: #bf5525;
-  }
+    
+ 
+  /* Text-size styles */
+  --STU-1:0.8125rem;
+  --BU: 0.625rem;
+  --SM: 0.6875rem;
+  --BO-2: 1rem;
+  --BO-1: 1.375rem;
+  --HEA-3: 1.125rem;
+  --HEA-2: 1.5rem;
+  --HEA-1: 2.25rem;
+
+
+  /* Font-family styles */
+  font-family: "Anton SC";
+  font-family: "Oswald";
+}

@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="/assets/Icons/Logo-coupe.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/Icons/Logo-coupe.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vis'Sport</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
 </head>
 <body>
+    <header class="header">
+        
+        <a class="header__logo-link" href="/index.html">
+            <img
+                class="header__logo"
+                src="/assets/Icons/Logo-coupe.svg"
+                alt="Logo Vis'Sport"
+            />
+        </a>
+        <h1 class="header__name">Vis'sport</h1>
+        <button
+            class="header__menu-btn menu-btn"
+            aria-label="menu"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+          <a class="logo-cliquable__header" href="/"><img src="/assets/Icons/Logo-complet.svg" alt="Logo"></a>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="Info-pratique.html">Info Pratique</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Nous Contacter</a></li>
+                <li class="menu__item"><a class="menu__link" href="nos-invites.html">Nos invités</a></li>
+                <li class="menu__item"><a class="menu__link" href="proggramations.html">Programmation</a></li>
+                <li class="menu__item"><a class="menu__link" href="a-propos.html">À Propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="billeterie.html">Billeterie</a></li>
+                <li class="menu__item"><a class="menu__link" href="Programme.html">Programme</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="billeterie__titre">Billetterie Vis'Sport 2025</h1>
+    <p class="billeterie__texte">Ne manquez pas l’événement de l’année où le sport et l’audiovisuel se rencontrent ! Réservez dès maintenant vos billets pour Vis'Sport 2025, qui se déroulera du 19 au 21 septembre 2025 à l’Axone de Montbéliard. Que vous soyez passionné de sport, amateur de cinéma, ou simplement curieux, nous avons une option pour vous !</p>
+        <div class="billeterie__type-de-billet">
+            <h2 class="billeterie__type-de-billet-titre">Types de Billets</h2>
+            <ul class="billeterie__type-de-billet-liste">
+                <li class="billeterie__type-de-billet-liste-item">
+                    <h3>Pass 1 Jour</h3>
+                    <p>Accès à toutes les projections, ateliers, et activités du festival pour une journée complète.</p>
+                </li>
+                <li>
+                    <p><strong>Tarif :</strong> 25€</p>
+                </li>
+                    <li>
+                    <p><strong>Tarif réduit (étudiants, -18 ans, demandeurs d’emploi) :</strong>15€/p>
+                </li>
+            </ul>
+        
+        
+        <ul class="billeterie__type-de-billet-liste">
+            <li class="billeterie__type-de-billet-liste-item">
+                <h3>Pass 3 Jours</h3>
+                <p>Vivez l’intégralité du festival avec un accès complet pendant les 3 jours, incluant tous les films, ateliers, et événements spéciaux.</p>
+            </li>
+            <li>
+                <p><strong>Tarif :</strong>  60€</p>
+            </li>
+                <li>
+                <p><strong>Tarif réduit : </strong>40€/p>
+            </li>
+        </ul>
+   
     
-</body>
-</html>
+        <ul class="billeterie__type-de-billet-liste">
+            <li class="billeterie__type-de-billet-liste-item">
+                <h3>Pass Virtuel</h3>
+                <p>Accédez à la plateforme en ligne du festival pour regarder les projections et contenus exclusifs depuis chez vous. Idéal si vous ne pouvez pas vous déplacer !</p>
+            </li>
+            <li>
+                <p><strong>Tarif :</strong> 20€</p>
+            </li>
+        </ul>
+        <ul class="billeterie__type-de-billet-liste">
+            <li class="billeterie__type-de-billet-liste-item">
+                <h3>Pass Virtuel</h3>
+                <p>Accédez à la plateforme en ligne du festival pour regarder les projections et contenus exclusifs depuis chez vous. Idéal si vous ne pouvez pas vous déplacer !</p>
+            </li>
+        </ul>
+            <ul class="billeterie__type-de-billet-liste">
+                <li class="billeterie__type-de-billet-liste-item">
+                    <h2>Offres Spéciales</h2>
+                    <p><strong>Offre Early Bird : </strong>Réservez votre Pass 3 Jours avant le 30 juin 2025 et bénéficiez d’une réduction de 10% !</p>
+                    <small>Entrée gratuite pour les enfants de moins de 12 ans, accompagnés d’un adulte.</small>
+                </li>
+            </ul>
+        </div>
+        <div class="billeterie__reservation">
+            <h2 class="billeterie__reservation-titre">Comment Réserver ?</h2>
+            <ul class="billeterie__reservation-liste">
+                <li class="billeterie__reservation-item">
+                    <h3>En ligne :</h3>
+                    <p>Réservez vos billets en quelques clics sur notre plateforme sécurisée.</p>
+                    <a class="billeterie__reservation-btn" href=""><button>RÉSERVER MES BILLETS</button></a>
+                </li>
+            </ul>
+            <ul class="billeterie__reservation-liste">
+                <li class="billeterie__reservation-item">
+                    <h3>Sur Place</h3>
+                    <p>Des billets seront également disponibles à la vente directement à l’entrée du festival, sous réserve de disponibilité.</p>
+                    
+                </li>
+            </ul>
+            <ul class="billeterie__reservation-liste">
+                <li class="billeterie__reservation-item">
+                    <h3>Points de vente partenaires :</h3>
+                    <p>Retrouvez nos billets dans les points de vente habituels : FNAC, Carrefour Spectacles, et Ticketmaster.</p>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="billeterie__paiement">
+            <h2 class="billeterie__paiement-titre"></h2>
+            <p class="billeterie__paiement-texte">Nous acceptons les paiements par carte bancaire (Visa, MasterCard, American Express), PayPal, et virements bancaires pour les réservations en ligne. Les paiements en espèces seront acceptés sur place.</p>
+            <h3 class="billeterie__paiement-titre2">Informations Pratiques</h3>
+            <ul class="billeterie__paiement-liste">
+                <li class="billeterie__paiement-liste-item">
+                    <p><strong>Dates du festival :</strong>19-21 septembre 2025</p>
+                </li>
+                <li class="billeterie__paiement-liste-item">
+                    <p><strong>Lieu </strong>Axone de Montbéliard, France</p>
+                </li>
+                <li class="billeterie__paiement-liste-item">
+                    <p><strong>Horaires :</strong>10h00 - 23h00 chaque jour</p>
+                </li>
+            </ul>
+            <h2 class="billeterie__paiement-question">Pour toute question concernant la billetterie, n’hésitez pas à nous contacter à :</h2>
+            <p class="billeterie__paiement-question-contact">billetterie@vissportfestival.com <br> ou par téléphone au +33 3 81 99 00 00.</p>
+
+        </div>
+            <div class="billeterie__condition-general">
+                <h2 class="billeterie__condition-general-titre"></h2>
+                <ul class="billeterie__condition-general-liste">
+                    <li class="billeterie__condition-general-liste-item">
+                        <p>Les billets ne sont ni échangeables, ni remboursables, sauf en cas d'annulation de l'événement.</p>
+                    </li>
+                    <li class="billeterie__condition-general-liste-item">
+                        <p>Un justificatif sera demandé pour les tarifs réduits à l'entrée du festival.</p>
+                    </li>
+                    <li class="billeterie__condition-general-liste-item">
+                        <p>L’accès au festival est gratuit pour les enfants de moins de 12 ans, accompagnés d’un adulte titulaire d’un billet.</p>
+                    </li>
+                </ul>
+            </div>
+            <p class="billeterie__txt-fin-de-page"><strong>Réservez dès maintenant et préparez-vous à vivre Vis'Sport 2025, un festival inoubliable pour les amoureux du sport et du cinéma !</strong></p>
+            <footer class="footer">
+                <div class="footer__container container--footer">
+                    <div class="footer__logo-container logo-container--footer">
+                      <a class="footer__logo-click logo-click--footer" href="/">
+                        <img
+                            class="footer__logo"
+                            src="/assets/Icons/Logo-coupe.svg"
+                            alt="Logo Vis'Sport"
+                        />
+                      </a>
+                        <h2 class="contenu__titre-footer titre-footer--footer">Vis'Sport</h2>
+                        <h3 class="contenu__sous-titre-footer sous-titre-footer--footer"><strong>Menu</strong></h3>
+                        <ul>
+                          <li class="contenu__liste-footer liste-footer--footer">
+                            <h3 class="contenu__footer">Mention Légal</h3>
+                          </li>
+                          <li class="contenu__liste-footer liste-footer--footer">
+                            <h3 class="contenu__footer">Billeterie</h3>
+                          </li>
+                          <li class="contenu__liste-footer liste-footer--footer">
+                            <h3 class="contenu__footer">Où nous trouver ?</h3>
+                          </li>
+                          <li class="contenu__liste-footer liste-footer--footer">
+                            <h3 class="contenu__footer">Notre NewsLetter</h3>
+                          </li>
+                        </ul>
+                        <div class="réseau__footer">
+                          <h3 class="titre-réseau__footer">Nos Réseaux</h3>
+                          
+                          <a class="logo__footer" href="https://www.instagram.com/"><img src="/assets/Icons/instagram.avif" alt="Logo instagram"></a><a class="logo__footer" href="www.facebook.com"><img src="/assets/Icons/Facebook.avif" alt="Logo Facebook"></a><a class="logo__footer" href="https://www.tiktok.com/"><img src="/assets/Icons/Tiktok.avif" alt="Logo Tiktok"></a><a class="logo__footer" href="www.linkedin.com"><img src="/assets/Icons/Linkedin.avif" alt="Logo Linkedin"></a>
+                          </div>
+        
+                    </div>
+                    <nav class="footer__menu menu" aria-label="menu">
+                        <a class="bouton_footer" href="/"><button>Retourner à L'acceuil</button></a>
+        </body>
+        </html>
+

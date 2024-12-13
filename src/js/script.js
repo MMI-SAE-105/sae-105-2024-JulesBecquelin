@@ -35,7 +35,7 @@ const updateCarousel = () => {
     // Si on dépasse la première diapositive, revenir à la dernière
     if (currentIndex < 0) currentIndex = items.length - 1;
 
-    track.style.transform = translateX(-${currentIndex * 100}%);
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
 };
 
 // Va à la prochaine diapositive
@@ -63,7 +63,7 @@ const drag = (e) => {
     const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
     const deltaX = currentX - startX;
     currentTranslate = previousTranslate + (deltaX / track.offsetWidth) * 100;
-    track.style.transform = translateX(${currentTranslate}%);
+    track.style.transform = `translateX(${currentTranslate}%)`;
 };
 
 const stopDrag = () => {

@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--marron-foncé);
+    width: 393px;
+    height: 113px;
+}
+.header__logo {
+    height: 60px;
+}
+.header__menu-btn {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-btn__bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+.header__menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu__item {
+    margin: 0 10px;
+}
+.header__btn{
+    background-color: var(--marron-foncé);
+    color: var(--beige);
+}
+
+
+

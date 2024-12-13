@@ -1,7 +1,96 @@
 /*font*/
 body {
-    font-family: ;
-}
-html{
+    font-family: var(--font-family);
+    font-size: var(--BO-2);
+    color: var(--blanc);
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
     background-color: var(--couleur-de-fond);
+    line-height: 220%;
 }
+h1,
+h2{
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+h1{
+    font-size: var(--HEA-1);
+}
+h2{
+    font-size: var(--HEA-2);
+}
+h3{
+    font-size: var(--HEA-3);
+}
+p{
+    font-size: var(--BO-2);
+    line-height: 1.5;
+}
+h4
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+.highlight {
+    padding: 4px var(--space1x);
+    font-weight: 500;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    background-color:var(--beige);
+    color: var(--blanc);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.contact__formulaire-input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blanc);
+    background-color: var(--blanc);
+    color: black;
+}
+.contact__formulaire-textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blanc);
+    background-color: var(--blanc);
+    color: black;
+    
+}
+.contact__formulaire-form{
+    align-items: center;
+    padding-left: 10px;
+}
+
+.img{
+    align-items: center;
+    justify-content: center;
+}
+

@@ -11,3 +11,11 @@
 
 /*vendors*/
 @import "/src/css/vendors/normalize.css";
+
+/*components*/
+@import "/src/css/component/menu.css";
+@import "/src/css/component/hero.css";
+@import "/src/css/component/header.css";
+@import "/src/css/component/homepage.css";
+@import "/src/css/component/contenu-principal.css";
+@import "/src/css/component/footer.css";

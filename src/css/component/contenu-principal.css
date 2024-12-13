@@ -1,0 +1,67 @@
+.contenu {
+    padding: 20px;
+}
+.titre-header--accueil {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.texte--accueil {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.affiche--accueil {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+}
+
+.liste--accueil ul {
+    margin: 20px 0;
+}
+.titre-liste--accueil {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.texte-liste--accueil {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.button--accueil {
+    display: inline-block;
+    margin: 20px 0;
+}
+.billeterie--accueil {
+    text-align: center;
+    padding: 30px 20px;
+    background-color:var(--couleur-de-fond);
+    color: white;
+}
+.billeterie--accueil p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+.billeterie--accueil button a {
+    background-color: var(--beige);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.remerciement--accueil {
+    padding: 30px 20px;
+    background-color: var(--couleur-de-fond);
+}
+.titre-remerciement--accueil {
+    font-size: 24px;
+    font-weight: bold;
+}
+.texte-remerciment--accueil {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 200%;
+}

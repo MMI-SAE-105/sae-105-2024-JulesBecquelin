@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vis'Sport</title>
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js"></script>
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -22,12 +22,12 @@
             />
         </a>
         <button
-            class="header__menu-btn menu-btn"
+            class="header__menu-btn"
             aria-label="menu"
             aria-expanded="false"
             aria-controls="mainNav"
         >
-            <span class="menu-btn__bar" aria-hidden="true"></span>
+            <img src="/assets/Image/icons8-menu.svg" alt="">
         </button>
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <a class="logo-cliquable__header" href="/">
@@ -41,128 +41,131 @@
                 <li class="menu__item"><a class="menu__link" href="proggramations.html">Programmation</a></li>
                 <li class="menu__item"><a class="menu__link" href="a-propos.html">À Propos</a></li>
                 <li class="menu__item"><a class="menu__link" href="billeterie.html">Billeterie</a></li>
-                <li class="menu__item"><a class="menu__link" href="Programme.html">Programme</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero hero--home">
-            <img src="/assets/Image/photo-accueil-philtré.png" alt="Image Accueil">
-            <h1 class="hero__title hero__title--home">Bienvenue au Festival Vis'Sport</h1>
-            <h3 class="hero__subtitle subtitle--home">L’endroit où le Sport et l’Audiovisuel se Rencontrent !</h3>
-            <small class="hero__small-texte small-texte--home">septembre 2025</small>
-            <div>
-                <div class="contenu contenu--accueil">
-                    <header class="contenu__header header--accueil">
-                        <a href="/Info-pratique.html" class="contenu__button-header button-header--accueil">INFORMATION SUR LE LIEU</a>
-                        <h2 class="titre__header titre-header--accueil">Un Festival Unique, Alliant Sport et Cinéma !</h2>
-                    </header>
-                    <p class="contenu__texte texte--accueil">
-                        Le Vis'Sport est bien plus qu’un événement : c’est une immersion dans le sport et l’audiovisuel. Découvrez des films captivants, rencontrez des athlètes et participez à des ateliers créatifs pour tous les âges.
-                    </p>
-                    <p class="contenu__texte texte--accueil">
-                        Rejoignez-nous pour trois jours de découvertes et de partage autour du sport et de ses récits fascinants au cinéma. Une occasion unique d’explorer des sports variés et de vivre des moments inoubliables en famille ou entre amis.
-                    </p>
-                    <img class="contenu__affiche affiche--accueil" src="/assets/Image/Affiche-du-festival.png" alt="Affiche du festival">
-                    <h2 class="contenu__titre titre--accueil">Ce Qui Vous Attend :</h2>
-                    <section class="contenu__liste liste--accueil">
-                        <ul>
-                            <li class="contenu__titre-liste titre-liste--accueil"><strong>Projections de Films</strong></li>
-                            <li>Découvrez une sélection de films uniques, tous liés à l'univers du sport : compétitions épiques, parcours de champions, défis personnels… Une programmation riche et variée vous attend !</li>
-                            <li class="contenu__titre-liste titre-liste--accueil"><strong>Rencontres et Démonstrations Sportives</strong></li>
-                            <li class="contenu__texte-liste texte-liste--accueil">
-                                Participez à des activités interactives avec des associations sportives locales et des coachs experts, tout en vous amusant. Testez de nouveaux sports ou perfectionnez-vous dans vos disciplines préférées.
-                            </li>
-                            <li class="contenu__titre-liste titre-liste--accueil"><strong>Ateliers Créatifs</strong></li>
-                            <li class="contenu__texte-liste texte-liste--accueil">
-                                Initiez-vous à l’art du documentaire sportif et réalisez vos propres mini-films grâce à nos ateliers audiovisuels. Repartez avec votre création personnelle !
-                            </li>
-                            <li class="contenu__titre-liste titre-liste--accueil"><strong>Expositions Audiovisuelles</strong></li>
-                            <li class="contenu__texte-liste texte-liste--accueil">
-                                Plongez dans des univers visuels uniques, avec des expositions qui vous feront redécouvrir le sport à travers l’image et le son.
-                            </li>
-                        </ul>
-                        <a class="contenu__button button--accueil" href="/Programme.html">ACCÈS AU PROGRAMME</a>
-                    </section>
-                    <img class="contenu__image-accueil image-accueil--accueil" src="/assets/Image/image-accueil.png" alt="Image qui montre des volants de badmintons à terre">
-                    <h2 class="contenu__titre texte--accueil">Une Accessibilité Pour Tous !</h2>
-                    <p class="contenu__texte texte--accueil">
-                        Que vous soyez sur place ou à distance, Vis'Sport vous offre une plateforme virtuelle pour ne rien manquer. Vous pourrez y suivre les projections en ligne et accéder à des contenus exclusifs : interviews d’athlètes, coulisses des grands événements sportifs, et bien plus encore.
-                    </p>
-                    <section class="contenu__liste liste--accueil">
-                        <h2 class="contenu__titre titre--accueil">Liste de certains de nos invités</h2>
-                        <ul>
-                            <li class="contenu__titre-liste titre--accueil"><strong>Marie-José Pérec</strong></li>
-                            <li class="contenu__texte-liste texte--accueil">
-                                Triple championne olympique d’athlétisme, elle partagera son expérience unique sur la scène internationale et participera à une table ronde sur le dépassement de soi.
-                            </li>
-                            <li class="contenu__titre-liste titre--accueil"><strong>Tony Parker</strong></li>
-                            <li class="contenu__texte-liste texte--accueil">
-                                Icône du basketball français et ancien joueur de la NBA, il interviendra lors d’une discussion sur le sport en tant que levier de réussite personnelle et professionnelle.
-                            </li>
-                            <li class="contenu__titre-liste titre--accueil"><strong>Jimmy Chin</strong></li>
-                            <li class="contenu__texte-liste texte--accueil">
-                                Réalisateur oscarisé de Free Solo et athlète extrême, il animera une masterclass exclusive sur la réalisation de documentaires sportifs.
-                            </li>
-                            <li class="contenu__titre-liste titre--accueil"><strong>Amélie Mauresmo</strong></li>
-                            <li class="contenu__texte-liste texte--accueil">
-                                Ancienne championne de tennis et directrice de Roland-Garros, elle évoquera les défis de la transition entre une carrière sportive et des rôles de leadership.
-                            </li>
-                        </ul>
-                        <a class="contenu__button button--accueil" href="/nos-invites.html">ACCÈS À LA BILLETERIE</a>
-                    </section>
+            <div class="hero hero--home">
+                <div class="hero__overlay">
+                    <img class="hero__title-image" src="/assets/Image/photo-accueil-philtré.png" alt="Image Accueil">
+                    <div class="hero__title-image-texte">
+                        <h1 class="hero__title hero__title--home">Bienvenue au Festival Vis'Sport</h1>
+                        <h3 class="hero__subtitle subtitle--home">L’endroit où le Sport et l’Audiovisuel se Rencontrent !</h3>
+                        <small class="hero__small-texte small-texte--home">19-21 septembre 2025</small>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section class="contenu__billeterie billeterie--accueil">
-            <h2 class="contenu__titre-billeterie titre-billeterie--accueil">Réservez Vos Places Dès Maintenant !</h2>
-            <p class="contenu__texte-billeterie texte-billeterie--accueil">Ne manquez pas cet événement unique ! Les places sont limitées, alors réservez vos billets en ligne dès aujourd’hui et profitez d’offres spéciales pour les premiers inscrits.</p>
-            <a class="contenu__button-billeterie button-billeterie--accueil" href="/billeterie.html">RÉSERVER VOS BILLETS</a>
-        </section>
-        <section class="contenu__remerciement remerciement--accueil">
-          <h2 class="contenu__titre-remerciement titre-remerciement--accueil">Remerciements à Nos Partenaires</h2>
-          <p class="contenu__texte-remerciement texte-remerciment--accueil">Le festival Vis'Sport 2025 tient à remercier chaleureusement ses partenaires, sans qui cet événement unique n’aurait pu voir le jour. Grâce au soutien de médias prestigieux comme L’Équipe, Eurosport, et France Télévisions, ainsi qu’à l’engagement de leaders audiovisuels tels que Pathé Gaumont, Netflix, et Arte, nous pouvons offrir une programmation riche et inspirante.
-            Nous exprimons également notre gratitude à nos partenaires sportifs, notamment Nike, Adidas, et Decathlon, qui contribuent à dynamiser nos activités et démonstrations. Enfin, un immense merci à la Région Bourgogne-Franche-Comté, à la Ville de Montbéliard, et au Ministère des Sports pour leur soutien institutionnel et leur aide précieuse à promouvoir les valeurs du sport et de la culture.
-            Votre soutien nous permet de faire de Vis'Sport un événement inoubliable pour tous. Merci de partager cette aventure avec nous !</p>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__container container--footer">
-            <div class="footer__logo-container logo-container--footer">
-              <a class="footer__logo-click logo-click--footer" href="/">
-                <img
-                    class="footer__logo"
-                    src="/assets/Icons/Logo-coupe.svg"
-                    alt="Logo Vis'Sport"
-                />
-              </a>
-                <h2 class="contenu__titre-footer titre-footer--footer">Vis'Sport</h2>
-                <h3 class="contenu__sous-titre-footer sous-titre-footer--footer"><strong>Menu</strong></h3>
-                <ul>
-                  <li class="contenu__liste-footer liste-footer--footer">
-                    <h3 class="contenu__footer">Mention Légal</h3>
-                  </li>
-                  <li class="contenu__liste-footer liste-footer--footer">
-                    <h3 class="contenu__footer">Billeterie</h3>
-                  </li>
-                  <li class="contenu__liste-footer liste-footer--footer">
-                    <h3 class="contenu__footer">Où nous trouver ?</h3>
-                  </li>
-                  <li class="contenu__liste-footer liste-footer--footer">
-                    <h3 class="contenu__footer">Notre NewsLetter</h3>
-                  </li>
-                </ul>
-                <div class="réseau__footer">
-                  <h3 class="titre-réseau__footer">Nos Réseaux</h3>
-                  
-                  <a class="logo__footer" href="https://www.instagram.com/"><img src="/assets/Icons/instagram.avif" alt="Logo instagram"></a><a class="logo__footer" href="https://www.facebook.com"><img src="/assets/Icons/Facebook.avif" alt="Logo Facebook"></a><a class="logo__footer" href="https://www.tiktok.com/"><img src="/assets/Icons/Tiktok.avif" alt="Logo Tiktok"></a><a class="logo__footer" href="https://www.linkedin.com"><img src="/assets/Icons/Linkedin.avif" alt="Logo Linkedin"></a>
-                  </div>
-
+                    <div class="contenu contenu--accueil">
+                        <header class="contenu__header header--accueil">
+                            <a href="/Info-pratique.html" class="contenu__button-header button-header--accueil"><button>INFORMATION SUR LE LIEU</button></a>
+                            <h2 class="titre__header titre-header--accueil">Un Festival Unique, Alliant Sport et Cinéma !</h2>
+                        </header>
+                        <p class="contenu__texte texte--accueil">
+                            Le Vis'Sport est bien plus qu’un événement : c’est une immersion dans le sport et l’audiovisuel. Découvrez des films captivants, rencontrez des athlètes et participez à des ateliers créatifs pour tous les âges.
+                        </p>
+                        <p class="contenu__texte texte--accueil">
+                            Rejoignez-nous pour trois jours de découvertes et de partage autour du sport et de ses récits fascinants au cinéma. Une occasion unique d’explorer des sports variés et de vivre des moments inoubliables en famille ou entre amis.
+                        </p>
+                        <img class="contenu__affiche affiche--accueil" src="/assets/Image/Affiche-du-festival.png" alt="Affiche du festival">
+                        <h2 class="contenu__titre titre--accueil">Ce Qui Vous Attend :</h2>
+                        <section class="contenu__liste liste--accueil">
+                            <ul>
+                                <li class="contenu__titre-liste titre-liste--accueil"><strong>Projections de Films</strong></li>
+                                <li>Découvrez une sélection de films uniques, tous liés à l'univers du sport : compétitions épiques, parcours de champions, défis personnels… Une programmation riche et variée vous attend !</li>
+                                <li class="contenu__titre-liste titre-liste--accueil"><strong>Rencontres et Démonstrations Sportives</strong></li>
+                                <li class="contenu__texte-liste texte-liste--accueil">
+                                    Participez à des activités interactives avec des associations sportives locales et des coachs experts, tout en vous amusant. Testez de nouveaux sports ou perfectionnez-vous dans vos disciplines préférées.
+                                </li>
+                                <li class="contenu__titre-liste titre-liste--accueil"><strong>Ateliers Créatifs</strong></li>
+                                <li class="contenu__texte-liste texte-liste--accueil">
+                                    Initiez-vous à l’art du documentaire sportif et réalisez vos propres mini-films grâce à nos ateliers audiovisuels. Repartez avec votre création personnelle !
+                                </li>
+                                <li class="contenu__titre-liste titre-liste--accueil"><strong>Expositions Audiovisuelles</strong></li>
+                                <li class="contenu__texte-liste texte-liste--accueil">
+                                    Plongez dans des univers visuels uniques, avec des expositions qui vous feront redécouvrir le sport à travers l’image et le son.
+                                </li>
+                            </ul>
+                            <a class="contenu__button button--accueil" href="/Programme.html"><button>ACCÈS AU PROGRAMME</button></a>
+                        </section>
+                        <img class="contenu__image-accueil image-accueil--accueil" src="/assets/Image/image-accueil.png" alt="Image qui montre des volants de badmintons à terre">
+                        <h2 class="contenu__titre texte--accueil">Une Accessibilité Pour Tous !</h2>
+                        <p class="contenu__texte texte--accueil">
+                            Que vous soyez sur place ou à distance, Vis'Sport vous offre une plateforme virtuelle pour ne rien manquer. Vous pourrez y suivre les projections en ligne et accéder à des contenus exclusifs : interviews d’athlètes, coulisses des grands événements sportifs, et bien plus encore.
+                        </p>
+                        <section class="contenu__liste liste--accueil">
+                            <h2 class="contenu__titre titre--accueil">Liste de certains de nos invités</h2>
+                            <ul>
+                                <li class="contenu__titre-liste titre--accueil"><strong>Marie-José Pérec</strong></li>
+                                <li class="contenu__texte-liste texte--accueil">
+                                    Triple championne olympique d’athlétisme, elle partagera son expérience unique sur la scène internationale et participera à une table ronde sur le dépassement de soi.
+                                </li>
+                                <li class="contenu__titre-liste titre--accueil"><strong>Tony Parker</strong></li>
+                                <li class="contenu__texte-liste texte--accueil">
+                                    Icône du basketball français et ancien joueur de la NBA, il interviendra lors d’une discussion sur le sport en tant que levier de réussite personnelle et professionnelle.
+                                </li>
+                                <li class="contenu__titre-liste titre--accueil"><strong>Jimmy Chin</strong></li>
+                                <li class="contenu__texte-liste texte--accueil">
+                                    Réalisateur oscarisé de Free Solo et athlète extrême, il animera une masterclass exclusive sur la réalisation de documentaires sportifs.
+                                </li>
+                                <li class="contenu__titre-liste titre--accueil"><strong>Amélie Mauresmo</strong></li>
+                                <li class="contenu__texte-liste texte--accueil">
+                                    Ancienne championne de tennis et directrice de Roland-Garros, elle évoquera les défis de la transition entre une carrière sportive et des rôles de leadership.
+                                </li>
+                            </ul>
+                            <a class="contenu__button button--accueil" href="/nos-invites.html"><button>ACCÈS À LA BILLETERIE</button></a>
+                        </section>
+                    </div>
+                </div>
             </div>
-            <nav class="footer__menu menu" aria-label="menu">
-                <a class="bouton_footer" href="/"><button>Retourner à L'acceuil</button></a>
-            </nav>
-        </div>
-    </footer>
-</body>
-</html>
+            <section class="contenu__billeterie billeterie--accueil">
+                <h2 class="contenu__titre-billeterie titre-billeterie--accueil">Réservez Vos Places Dès Maintenant !</h2>
+                <p class="contenu__texte-billeterie texte-billeterie--accueil">Ne manquez pas cet événement unique ! Les places sont limitées, alors réservez vos billets en ligne dès aujourd’hui et profitez d’offres spéciales pour les premiers inscrits.</p>
+                <a class="contenu__button-billeterie button-billeterie--accueil" href="/billeterie.html"><button>RÉSERVER VOS BILLETS</button></a>
+            </section>
+            <section class="contenu__remerciement remerciement--accueil">
+            <h2 class="contenu__titre-remerciement titre-remerciement--accueil">Remerciements à Nos Partenaires</h2>
+            <p class="contenu__texte-remerciement texte-remerciment--accueil">Le festival Vis'Sport 2025 tient à remercier chaleureusement ses partenaires, sans qui cet événement unique n’aurait pu voir le jour. Grâce au soutien de médias prestigieux comme L’Équipe, Eurosport, et France Télévisions, ainsi qu’à l’engagement de leaders audiovisuels tels que Pathé Gaumont, Netflix, et Arte, nous pouvons offrir une programmation riche et inspirante.
+                Nous exprimons également notre gratitude à nos partenaires sportifs, notamment Nike, Adidas, et Decathlon, qui contribuent à dynamiser nos activités et démonstrations. Enfin, un immense merci à la Région Bourgogne-Franche-Comté, à la Ville de Montbéliard, et au Ministère des Sports pour leur soutien institutionnel et leur aide précieuse à promouvoir les valeurs du sport et de la culture.
+                Votre soutien nous permet de faire de Vis'Sport un événement inoubliable pour tous. Merci de partager cette aventure avec nous !</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container--footer">
+                <div class="footer__logo-container logo-container--footer">
+                <a class="footer__logo-click logo-click--footer" href="/">
+                    <img
+                        class="footer__logo"
+                        src="/assets/Icons/Logo-coupe.svg"
+                        alt="Logo Vis'Sport"
+                    />
+                </a>
+                    <h2 class="contenu__titre-footer titre-footer--footer">Vis'Sport</h2>
+                    <h3 class="contenu__sous-titre-footer sous-titre-footer--footer"><strong>Menu</strong></h3>
+                    <ul>
+                    <li class="contenu__liste-footer liste-footer--footer">
+                        <h3 class="contenu__footer">Mention Légal</h3>
+                    </li>
+                    <li class="contenu__liste-footer liste-footer--footer">
+                        <h3 class="contenu__footer">Billeterie</h3>
+                    </li>
+                    <li class="contenu__liste-footer liste-footer--footer">
+                        <h3 class="contenu__footer">Où nous trouver ?</h3>
+                    </li>
+                    <li class="contenu__liste-footer liste-footer--footer">
+                        <h3 class="contenu__footer">Notre NewsLetter</h3>
+                    </li>
+                    </ul>
+                    <div class="réseau__footer">
+                    <h3 class="titre-réseau__footer">Nos Réseaux</h3>
+                    
+                    <a class="logo__footer" href="https://www.instagram.com/"><img src="/assets/Icons/instagram.avif" alt="Logo instagram"></a><a class="logo__footer" href="https://www.facebook.com"><img src="/assets/Icons/Facebook.avif" alt="Logo Facebook"></a><a class="logo__footer" href="https://www.tiktok.com/"><img src="/assets/Icons/Tiktok.avif" alt="Logo Tiktok"></a><a class="logo__footer" href="https://www.linkedin.com"><img src="/assets/Icons/Linkedin.avif" alt="Logo Linkedin"></a>
+                    </div>
+
+                </div>
+                <nav class="footer__menu menu" aria-label="menu">
+                    <a class="bouton_footer" href="/"><button>Retourner à L'acceuil</button></a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+    </html>

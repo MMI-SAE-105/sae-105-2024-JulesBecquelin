@@ -1,0 +1,25 @@
+.hero__title-image {
+    width: 100%;
+    height: auto;
+    filter: sepia(0.6) hue-rotate(-20deg) saturate(3) brightness(0.5); 
+}
+.hero__title-image-texte {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--blanc);
+    padding: var(--space2x);
+    border-radius: var(--border-radius);
+    width: 280px;
+    height: 98px;
+    flex-shrink: 0; 
+}
+
+.small-texte--home{
+    font-size: var(--SM);
+    width: 168px;
+    height: 24px;
+    flex-shrink: 0;
+
+}

@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM :Becquelin
+- PRÉNOM :Jules
+- GROUPE :A1
+- URL du site :https://vissportsae.netlify.app
+- URL FIGMA :https://www.figma.com/design/EqJlld3uO6du5zCigr5KgC/Maquette-SA%C3%89-103?node-id=24-149&t=RWg7hZNuJnGpdr5l-1
 
 ## Sujet
 

@@ -16,17 +16,15 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    z-index: 3;
 }
 .menu-btn__bar {
     width: 25px;
     height: 3px;
     background-color: white;
 }
-.header__menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-}
+
+
 .menu__item {
     margin: 0 10px;
 }

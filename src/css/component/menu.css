@@ -1,83 +1,91 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #222;
-  color: #fff;
-}
-
-/* Style pour le logo */
-.header__logo-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.header__logo {
-  height: 50px;
-  width: auto;
-}
-
-/* Style pour le bouton du menu (version mobile) */
-.header__menu-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.header__menu-btn img {
-  height: 30px;
-  width: 30px;
-}
-
-/* Style pour le menu de navigation */
-.menu {
-  background-color: var(--marron-foncé);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.header__menu[aria-hidden="true"] {
+  transform: translate(100%);
   visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s ease;
-  z-index: 1000; /* Ensure the menu is on top of other elements */
 }
 
-.menu--open {
-  visibility: visible;
-  opacity: 1;
+.header__menu {
+ visibility: visible;
+  display: flex;
+  position: fixed;
+  inset: 0;
+  background-color: var(--marron-foncé);
+  color: var(--white);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space5x) var(--space3x) var(--space3x);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 
-.menu__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
+
+.menu__link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--fs-xl);
+  display: block;
+}
+
+.menu__link--silent {
+  color: var(--gray-600);
+  font-size: var(--fs-s);
 }
 
 .menu__item {
-  margin: var(--space2x) 0;
+  margin-bottom: var(--space3x);
+  padding-bottom: var(--space1x);
+  border-bottom: 1px solid var(--white);
 }
 
-.menu__link {
-  font-size: var(--HEA-2);
-  color: var(--blanc);
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.menu__social-network,
+.menu__terms {
+  display: flex;
+  gap: var(--space2x);
+  justify-content: end;
+  margin-bottom: var(--space2x);
 }
 
-.menu__link:hover {
-  color: var(--gris-clair);
+.header__menu-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu-btn-bar,
+.header__menu-btn-bar::before,
+.header__menu-btn-bar::after {
+  content: "";
+  background: var(--beige);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+.header__menu-btn-bar::before {
+  top: -10px;
+}
+
+.header__menu-btn-bar::after {
+  top: 10px;
+}
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.header__menu-btn[aria-expanded="true"] .header__menu-btn-bar,
+.header__menu-btn[aria-expanded="true"] .header__menu-btn-bar::before,
+.header__menu-btn[aria-expanded="true"] .header__menu-btn-bar::after {
+  transform: rotate(135deg);
+  background: var(--beige);
+}
+
+.header__menu-btn[aria-expanded="true"] .header__menu-btn-bar::before,
+.header__menu-btn[aria-expanded="true"] .header__menu-btn-bar::after {
+  transform: rotate(90deg);
+  top: 0;
 }

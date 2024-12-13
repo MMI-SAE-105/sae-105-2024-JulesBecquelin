@@ -27,30 +27,51 @@
 }
 
 
+.carroussel__hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .carrousel__item{
     display: flex;
-    height: 100%;
-    
-}
-.carouselcontrols {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    margin: 1em 16px 2em;
+    transition: transform 0.5s ease-in-out;
+    cursor: grab;
 }
 
-.carousel__button--next{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid;
-    border-radius: 30px;
+.image-carroussel__hero{
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-.carousel__button--prev{
-    transform: rotate(0.5turn);
+.carousel__controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.carousel__button {
+    background-color: var(--beige);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.carousel__button:hover {
+    background-color: #4a148c;
+    transform: scale(1.1);
 }
 

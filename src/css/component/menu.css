@@ -11,17 +11,17 @@
   background-color: var(--marron-foncé);
   color: var(--white);
   flex-direction: column;
-  justify-content: space-between;
+ 
   padding: var(--space5x) var(--space3x) var(--space3x);
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
 
 
-.menu__link {
-  color: var(--white);
+.menu__list {
+  color: var(--blanc);
   text-decoration: none;
-  font-size: var(--fs-xl);
+  font-size: var(--HEA-3);
   display: block;
 }
 
@@ -33,7 +33,7 @@
 .menu__item {
   margin-bottom: var(--space3x);
   padding-bottom: var(--space1x);
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--blanc);
 }
 
 .menu__social-network,

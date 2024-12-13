@@ -65,3 +65,13 @@
     margin-top: 10px;
     line-height: 200%;
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+

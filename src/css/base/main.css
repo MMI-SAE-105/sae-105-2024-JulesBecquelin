@@ -1,9 +1,9 @@
 /*font*/
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family-body);
     font-size: var(--BO-2);
     color: var(--blanc);
-    margin: auto;
+    margin: 15px;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--couleur-de-fond);
@@ -13,6 +13,9 @@ h1,
 h2{
     font-weight: normal;
     line-height: 1.1;
+    font-family: var(--font-family);
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
 h1{
@@ -23,10 +26,12 @@ h2{
 }
 h3{
     font-size: var(--HEA-3);
+    padding: 10px;
 }
 p{
     font-size: var(--BO-2);
     line-height: 1.5;
+    padding: 10px;
 }
 h4
 button,
@@ -85,12 +90,22 @@ button {
     
 }
 .contact__formulaire-form{
-    align-items: center;
-    padding-left: 10px;
+    padding: 10px;
+    
+    border-radius: 5px;
+    font-size: 16px;
+    width: 95%;
+    display: inline-block;
+    margin: 0 auto;
+    margin : 10px 20px;
+    overflow: hidden;
+    
 }
 
 .img{
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
+
 
